@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39E7F227115EFA8B658401C7 /* Pods_ReactiveRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A245DF242410F362219659E /* Pods_ReactiveRequest.framework */; };
+		EB9783291DD339C700D606E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9783281DD339C700D606E9 /* AppDelegate.swift */; };
+		EB97832B1DD339C700D606E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97832A1DD339C700D606E9 /* ViewController.swift */; };
+		EB9783301DD339C700D606E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB97832F1DD339C700D606E9 /* Assets.xcassets */; };
+		EB9783331DD339C700D606E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9783311DD339C700D606E9 /* LaunchScreen.storyboard */; };
+		EB97833B1DD33D6E00D606E9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97833A1DD33D6E00D606E9 /* ViewModel.swift */; };
+		EB97833D1DD33D8C00D606E9 /* DeezerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97833C1DD33D8C00D606E9 /* DeezerService.swift */; };
+		EB97833F1DD33DE900D606E9 /* DeezerAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97833E1DD33DE900D606E9 /* DeezerAlbum.swift */; };
+		EB9783411DD3437700D606E9 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9783401DD3437700D606E9 /* RealmManager.swift */; };
+		EB9783431DD3470A00D606E9 /* DeezerSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9783421DD3470A00D606E9 /* DeezerSong.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A245DF242410F362219659E /* Pods_ReactiveRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15992B2E665E0E13A071DDD /* Pods-ReactiveRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveRequest/Pods-ReactiveRequest.release.xcconfig"; sourceTree = "<group>"; };
+		D2B3B3645CB195AB4E7CCBA0 /* Pods-ReactiveRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveRequest/Pods-ReactiveRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9783251DD339C700D606E9 /* ReactiveRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9783281DD339C700D606E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB97832A1DD339C700D606E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB97832F1DD339C700D606E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9783321DD339C700D606E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB9783341DD339C700D606E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB97833A1DD33D6E00D606E9 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EB97833C1DD33D8C00D606E9 /* DeezerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeezerService.swift; sourceTree = "<group>"; };
+		EB97833E1DD33DE900D606E9 /* DeezerAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeezerAlbum.swift; sourceTree = "<group>"; };
+		EB9783401DD3437700D606E9 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		EB9783421DD3470A00D606E9 /* DeezerSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeezerSong.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB9783221DD339C700D606E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E7F227115EFA8B658401C7 /* Pods_ReactiveRequest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		775A78E759A17E1D91FE5A1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A245DF242410F362219659E /* Pods_ReactiveRequest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ABF70C71C5585F7B7892FEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2B3B3645CB195AB4E7CCBA0 /* Pods-ReactiveRequest.debug.xcconfig */,
+				C15992B2E665E0E13A071DDD /* Pods-ReactiveRequest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB97831C1DD339C700D606E9 = {
+			isa = PBXGroup;
+			children = (
+				EB9783271DD339C700D606E9 /* ReactiveRequest */,
+				EB9783261DD339C700D606E9 /* Products */,
+				7ABF70C71C5585F7B7892FEB /* Pods */,
+				775A78E759A17E1D91FE5A1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB9783261DD339C700D606E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB9783251DD339C700D606E9 /* ReactiveRequest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB9783271DD339C700D606E9 /* ReactiveRequest */ = {
+			isa = PBXGroup;
+			children = (
+				EB9783281DD339C700D606E9 /* AppDelegate.swift */,
+				EB97832A1DD339C700D606E9 /* ViewController.swift */,
+				EB97833A1DD33D6E00D606E9 /* ViewModel.swift */,
+				EB97833C1DD33D8C00D606E9 /* DeezerService.swift */,
+				EB97832F1DD339C700D606E9 /* Assets.xcassets */,
+				EB9783311DD339C700D606E9 /* LaunchScreen.storyboard */,
+				EB9783341DD339C700D606E9 /* Info.plist */,
+				EB97833E1DD33DE900D606E9 /* DeezerAlbum.swift */,
+				EB9783421DD3470A00D606E9 /* DeezerSong.swift */,
+				EB9783401DD3437700D606E9 /* RealmManager.swift */,
+			);
+			path = ReactiveRequest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB9783241DD339C700D606E9 /* ReactiveRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9783371DD339C700D606E9 /* Build configuration list for PBXNativeTarget "ReactiveRequest" */;
+			buildPhases = (
+				F109FB77CD0E5CBDFBEA0EB4 /* [CP] Check Pods Manifest.lock */,
+				EB9783211DD339C700D606E9 /* Sources */,
+				EB9783221DD339C700D606E9 /* Frameworks */,
+				EB9783231DD339C700D606E9 /* Resources */,
+				BDF142B89219AFF1DA7D13D7 /* [CP] Embed Pods Frameworks */,
+				DC0E396B57C916F32925393A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveRequest;
+			productName = ReactiveRequest;
+			productReference = EB9783251DD339C700D606E9 /* ReactiveRequest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB97831D1DD339C700D606E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Emilien Stremsdoerfer";
+				TargetAttributes = {
+					EB9783241DD339C700D606E9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PQMBS3XAY4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB9783201DD339C700D606E9 /* Build configuration list for PBXProject "ReactiveRequest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB97831C1DD339C700D606E9;
+			productRefGroup = EB9783261DD339C700D606E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9783241DD339C700D606E9 /* ReactiveRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB9783231DD339C700D606E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9783331DD339C700D606E9 /* LaunchScreen.storyboard in Resources */,
+				EB9783301DD339C700D606E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDF142B89219AFF1DA7D13D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveRequest/Pods-ReactiveRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0E396B57C916F32925393A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveRequest/Pods-ReactiveRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F109FB77CD0E5CBDFBEA0EB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB9783211DD339C700D606E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB97832B1DD339C700D606E9 /* ViewController.swift in Sources */,
+				EB97833B1DD33D6E00D606E9 /* ViewModel.swift in Sources */,
+				EB97833F1DD33DE900D606E9 /* DeezerAlbum.swift in Sources */,
+				EB97833D1DD33D8C00D606E9 /* DeezerService.swift in Sources */,
+				EB9783291DD339C700D606E9 /* AppDelegate.swift in Sources */,
+				EB9783411DD3437700D606E9 /* RealmManager.swift in Sources */,
+				EB9783431DD3470A00D606E9 /* DeezerSong.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB9783311DD339C700D606E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9783321DD339C700D606E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9783351DD339C700D606E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB9783361DD339C700D606E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9783381DD339C700D606E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B3B3645CB195AB4E7CCBA0 /* Pods-ReactiveRequest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQMBS3XAY4;
+				INFOPLIST_FILE = ReactiveRequest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.justalab.ReactiveRequest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB9783391DD339C700D606E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15992B2E665E0E13A071DDD /* Pods-ReactiveRequest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQMBS3XAY4;
+				INFOPLIST_FILE = ReactiveRequest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.justalab.ReactiveRequest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB9783201DD339C700D606E9 /* Build configuration list for PBXProject "ReactiveRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9783351DD339C700D606E9 /* Debug */,
+				EB9783361DD339C700D606E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9783371DD339C700D606E9 /* Build configuration list for PBXNativeTarget "ReactiveRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9783381DD339C700D606E9 /* Debug */,
+				EB9783391DD339C700D606E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB97831D1DD339C700D606E9 /* Project object */;
+}

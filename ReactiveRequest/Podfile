@@ -1,0 +1,16 @@
+inhibit_all_warnings!
+use_frameworks!
+
+def shared_pods
+    pod 'Nikka/Rx', :git => 'https://github.com/JustaLab/Nikka.git'
+    pod 'RealmSwift', '~> 2.0.0'
+    pod 'RxCocoa', '~> 3.0.0'
+    pod 'RxRealm', '~> 0.3.1'
+    pod 'RxSwift', '~> 3.0.0'
+    pod 'SnapKit', '~> 3.0.0'
+end
+
+
+target 'ReactiveRequest' do
+    shared_pods
+end
