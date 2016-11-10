@@ -32,7 +32,7 @@ class ViewModel{
             }
             .map({DeezerAlbum.from(json: $0)})
             .filter({$0 != nil}).map({$0!})
-            //.flatMap({ self.realmManager.makeLocal(album: $0) })
+            .makeLocal()
             .bindTo(albumSubj)
             .addDisposableTo(bag)
     }

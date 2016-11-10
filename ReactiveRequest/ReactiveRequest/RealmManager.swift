@@ -13,14 +13,18 @@ import RxRealm
 
 class RealmManager{
     
-    func makeLocal(album:DeezerAlbum) -> Observable<DeezerAlbum>{
-        let realm = try! Realm()
-        try! realm.write({
-            realm.add(album, update: true)
+}
+
+extension Observable where Element : Object {
+    
+    func makeLocal() -> Observable<Element> {
+        return self.flatMap({ (element) -> Observable<Element> in
+            let realm = try! Realm()
+            try! realm.write({
+                realm.add(element, update: true)
+            })
+            return Observable.from(element)
         })
-        
-        let object = realm.object(ofType: DeezerAlbum.self, forPrimaryKey: album.id)
-        
-        return Observable.from(object!)
     }
+    
 }
