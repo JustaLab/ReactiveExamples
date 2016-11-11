@@ -18,7 +18,7 @@ class RealmManager{
 extension Observable where Element : Object {
     
     func makeLocal() -> Observable<Element> {
-        return self.flatMap({ (element) -> Observable<Element> in
+        return self.flatMapLatest({ (element) -> Observable<Element> in
             let realm = try! Realm()
             try! realm.write({
                 realm.add(element, update: true)

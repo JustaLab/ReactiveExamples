@@ -23,10 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = (User.current != nil) ? ViewController() : LoginViewController()
         
         
-        User.currentObs.asObservable().subscribe { (event:Event<User?>) in
+        User.currentObs.asObservable().subscribe {[weak self] (event:Event<User?>) in
             let vc:UIViewController = (event.element?.flatMap({$0}) != nil) ? ViewController() : LoginViewController()
             let animation:UIViewAnimationOptions = (event.element?.flatMap({$0}) != nil) ? .transitionFlipFromLeft : .transitionFlipFromRight
-            self.swapRootViewController(with: vc, animation: animation)
+            self?.swapRootViewController(with: vc, animation: animation)
         }.addDisposableTo(bag)
         return true
     }
